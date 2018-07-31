@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1   
 {
-    class Program
+   public class Program12
     {
 
-        static int RepeatingChar(string input)
+        public int RepeatingChar(string input)
         {
           
             int currentPointer = -1, i, j;
@@ -31,18 +31,5 @@ namespace ConsoleApp1
             return currentPointer;
         }
 
-      
-        static public void Main()
-        {
-            string userInput = "STRRSTRA";
-            int Positive = RepeatingChar(userInput);
-
-            if (Positive == -1)
-                Console.WriteLine("Not found");
-            else
-                Console.WriteLine("The repeating character into the string is:   {0}",userInput[Positive]);
-            Console.ReadKey();
-        }
-
-    }
+          }
 }
